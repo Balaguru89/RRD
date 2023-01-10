@@ -16,9 +16,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, modi a neque quod
             consectetur <span>voluptates perferendis. Ipsum ratione accusamus reiciendis enim magni
                 repudiandae officiis optio.</span></p>
-        <a href="./Task.html">Click</a>
     </div>
-
     <div class="cover">
         <button class="left" onclick="leftScroll()"><i class="fas fa-angle-left"></i></button>
         <div class="scroll-images">
@@ -27,10 +25,8 @@
                 <div class="text-container">
                     <div class="text carousel-slide active">
                         <img src="./Images/wgu.png" alt="wgu">
-                        
                         <p>17-INCH CAST ALUMINIUM WHEEL, FULLY <span>PAINTED SILVER LITHO </span></p>
                         <p>Standered on Touring FWD <span>(WGO)</span></p>
-                        
                     </div>
                     <div class="text-two carousel-slide">
                         <img src="./Images/wjr.png" alt="wjr">
@@ -49,62 +45,24 @@
                         <p>included with L Appearence Package on <span>Touring Hybrid, Touring L
                                 Hybrid and</span> Limited Hybrid<span>(WPF)</span></p>
                     </div>
-                    <div class="text-two carousel-slide">
-                        <img src="./Images/wjr.png" alt="wjr">
-                        <p>17-INCH CAST ALUMINIUM DIAMOND-CUT WHEEL,<span>WITH PALTIC GREY POCKETS</span></p>
-                        <p>Standered on Touring LFWD /Hybrid and <span>Touring Hybrid</span><span>(WJR)</span></p>
-                    </div>
-                    <div class="text-three carousel-slide">
-                        <img src="./Images/wp6.png" alt="wp6">
-                        <p>18-INCH CAST ALUMINIUM WHEEL WITH<span>FORESHADOW FINISH</span></p>
-                        <p>included with S Appearence Package on <span>Touring Hybrid, Touring L
-                                Hybrid and </span>Limited Hybrid<span>(WP6)</span></p>
-                    </div>
-                    <div class="text-four carousel-slide">
-                        <img src="./Images/wpf.png" alt="wpf">
-                        <p>18-INCH CAST ALUMINIUM WHEEL WITH<span>PLAIN FINISH</span></p>
-                        <p>included with L Appearence Package on <span>Touring Hybrid, Touring L
-                                Hybrid and</span> Limited Hybrid<span>(WPF)</span></p>
-                    </div>
-                    <div class="text-two carousel-slide">
-                        <img src="./Images/wjr.png" alt="wjr">
-                        <p>17-INCH CAST ALUMINIUM DIAMOND-CUT WHEEL,<span>WITH PALTIC GREY POCKETS</span></p>
-                        <p>Standered on Touring LFWD /Hybrid and <span>Touring Hybrid</span><span>(WJR)</span></p>
-                    </div>
-                    <div class="text-three carousel-slide">
-                        <img src="./Images/wp6.png" alt="wp6">
-                        <p>18-INCH CAST ALUMINIUM WHEEL WITH<span>FORESHADOW FINISH</span></p>
-                        <p>included with S Appearence Package on <span>Touring Hybrid, Touring L
-                                Hybrid and </span>Limited Hybrid<span>(WP6)</span></p>
-                    </div>
-                    <div class="text-four carousel-slide">
-                        <img src="./Images/wpf.png" alt="wpf">
-                        <p>18-INCH CAST ALUMINIUM WHEEL WITH<span>PLAIN FINISH</span></p>
-                        <p>included with L Appearence Package on <span>Touring Hybrid, Touring L
-                                Hybrid and</span> Limited Hybrid<span>(WPF)</span></p>
-                    </div>
-               
+                    
                 </div>
 
             </div>
-
-            
         </div>
-
-        
         <button class="right" onclick="rightScroll()">
             <i class="fas fa-angle-right"></i>
         </button>
     </div>
 
 
-    
-    
+    </div>
+    </div>
 </body>
 <script>
     function leftScroll() {
         const left = document.querySelector(".scroll-images");
-        left.scrollBy(300, 0);
+        left.scrollBy(600, 100);
         
         let doc = document.querySelector('.carousel-slide.active')
         if(doc.nextElementSibling) {
@@ -114,7 +72,7 @@
     }
     function rightScroll() {
         const right = document.querySelector(".scroll-images");
-        right.scrollBy(-300, 0);
+        right.scrollBy(-600, 0);
 
         let doc = document.querySelector('.carousel-slide.active')
         if(doc.previousElementSibling) {
